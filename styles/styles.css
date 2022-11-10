@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rajdhani:wght@700&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.wrap{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.logo{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #252A34;
+    cursor: pointer;
+    transition: .3s;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+.button{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    padding: 31px 0 28px 0;
+}
+.header .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .wrap .header__burger{
+    display: none;
+}
+
+.header .wrap .logo__red span{
+    color: #FF2E63;
+}
+
+.header .wrap .nav .nav__list{
+    display: flex;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #252A34;
+}
+.header .wrap .nav .nav__list .nav__item{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.header .wrap .nav .nav__list .nav__item:hover{
+    color:#FF2E63;
+}
+
+.header .wrap .header__buttons .login{
+    background: transparent;
+    color: #FF2E63;
+    padding: 8px 26px 10px 23px;
+}
+.header .wrap .header__buttons .login:hover{
+    background: #FF2E63;
+    color: #fff;
+}
+
+.header .wrap .header__buttons .register{    
+    padding: 8px 23px 10px 23px;
+    background:#FF2E63;
+    color: #fff;
+}
+.header .wrap .header__buttons .register:hover{
+    background: #ad2043;
+}
