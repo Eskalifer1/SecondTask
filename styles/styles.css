@@ -52,6 +52,7 @@ ul, ol{
 .header{
     width: 100%;
     padding: 31px 0 28px 0;
+    margin-bottom: 73px;
 }
 .header .wrap{
     display: flex;
@@ -102,4 +103,67 @@ ul, ol{
 }
 .header .wrap .header__buttons .register:hover{
     background: #ad2043;
+}
+
+/* Hero */
+
+.hero{
+    margin-bottom: 100px;
+}
+.hero .wrap{
+    display: flex;
+}
+
+.hero__top{
+    padding-top: 20px;
+    margin-right: 55px;
+}
+
+.hero__top h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #343434;
+    margin-bottom: 35px;
+}
+.hero__top h1 span{
+    color: #FF2E63;
+}
+.hero__top .enter{
+    padding: 8px 20px 10px 21px;
+    background:#346CD9;
+    color: #fff;
+}
+.hero__top .enter:hover{
+    background: #244b97;
+}
+
+
+.hero__bottom .container{
+    min-height: 302px;
+    margin-right: -55px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero__bottom .container img{
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__bottom .container::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+    border-radius: 50%;
+    top: -25%;
+    left: 35%;
+    width: 53%;
+    padding-bottom: 53%;
+    z-index: -1;
 }
