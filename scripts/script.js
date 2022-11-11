@@ -22,6 +22,13 @@ const swiper = new Swiper('.swiper',{
 
     autoplay: {
         delay: 4000,
-        disableOnInteraction: false
-    }
+        disableOnInteraction: false,
+        pauseOnMouseEnter:true
+    },
+
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    followFinger: true
 });

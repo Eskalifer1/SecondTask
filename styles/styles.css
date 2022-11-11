@@ -9,7 +9,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    background: #fff;
+    background: #E5E5E5;
 }
 .wrap{
     max-width: 1170px;
@@ -172,7 +172,7 @@ ul, ol{
 /* Swiper */
 
 .competitions{
-    margin-bottom: 100px;
+    margin-bottom: 101px;
 }
 
 .competitions .wrap .competitions__title{
@@ -288,4 +288,58 @@ ul, ol{
 }
 .competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__button:hover{
     background:#244b97;
+}
+
+/* How it works */
+
+.works{
+    margin-bottom: 100px;
+}
+
+.works .wrap{
+    text-align: center;
+}
+
+.works .wrap .works__title{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #343434;
+
+    margin-bottom: 52px;
+}
+
+.works .wrap .works__instruction{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.works .wrap .works__instruction .works__item{
+    max-width: 250px;
+}
+
+.works .wrap .works__instruction .works__arrow {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #343434;
+}
+
+.works .wrap .works__instruction .works__item .works__img__container{
+    min-height: 64px;
+    margin-bottom: 26px;
+}
+
+.works .wrap .works__instruction .works__item .works__item__description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: normal;
+    
+    color: #343434;
 }
