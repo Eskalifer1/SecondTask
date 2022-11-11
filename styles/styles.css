@@ -10,6 +10,7 @@ html, body {
     height: 100%;
     width: 100%;
     background: #E5E5E5;
+    overflow-x: hidden;
 }
 .wrap{
     max-width: 1170px;
@@ -186,7 +187,7 @@ ul, ol{
     margin-bottom: 31px;
 }
 
-.competitions .wrap .competitions__item{
+.wrap .swiper-slide{
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     max-width: 270px;
@@ -194,16 +195,16 @@ ul, ol{
     overflow: hidden;
 }
 
-.competitions .wrap .competitions__item .swiper__container img{
+.wrap .swiper-slide .swiper__container img{
     transition: all .3s ease;
     height: 100%;
 }
 
-.competitions .wrap .competitions__item .swiper__container:hover img{
+.wrap .swiper-slide .swiper__container:hover img{
     transform: scale(1.1);
 }
 
-.competitions .wrap .swiper__container{
+.wrap .swiper__container{
     display: block;
     min-height: 160px;
     height: 160px;
@@ -212,11 +213,11 @@ ul, ol{
     border-radius: 10px 10px 0px 0px;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text{
+.wrap .swiper-slide .swiper__slide__text{
     padding: 21px 0 11px 20px;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__title{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__title{
     font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 700;
@@ -228,16 +229,16 @@ ul, ol{
     transition: .3s;
     display: inline-block;
 }
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__title:hover{
-    transform: scale(1.2) translateX(20px);
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__title:hover{
+    text-decoration: underline;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__prices{
     display: flex;
     align-items: flex-start;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices .swiper__slide__newprice{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__prices .swiper__slide__newprice{
     font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 700;
@@ -248,7 +249,7 @@ ul, ol{
     margin: 0 7px 9px 0;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices .swiper__slide__oldprice{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__prices .swiper__slide__oldprice{
     font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 500;
@@ -260,7 +261,7 @@ ul, ol{
     padding-top: 9px;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__description{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__description{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -270,7 +271,7 @@ ul, ol{
     color: #343434;
 }
 
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__button{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__button{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -286,7 +287,7 @@ ul, ol{
     cursor: pointer;
     transition: .3s;
 }
-.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__button:hover{
+.wrap .swiper-slide .swiper__slide__text .swiper__slide__button:hover{
     background:#244b97;
 }
 
@@ -342,4 +343,100 @@ ul, ol{
     letter-spacing: normal;
     
     color: #343434;
+}
+
+/* Respond */
+
+.respond{
+    background: #346CD91F;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.respond .swiper-respond .swiper-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    text-align: center;    
+}
+.respond .swiper-respond .swiper-wrapper:first-child{
+    margin-left: 9.3%;
+}
+
+.respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top .respond__top__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 400px;
+
+    color: #343434;
+    margin-bottom: 30px;
+}
+
+.respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top .respond__top__name{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #343434;
+}
+
+.respond .swiper-respond .swiper-wrapper .swiper-slide .respond__container{
+    min-height: 400px;
+    height: 400px;
+}
+
+.respond .swiper-respond .swiper-wrapper .swiper-slide .respond__container img{
+    height: 100%;
+}
+
+.respond .swiper-respond .swiper-pagination{
+    position: absolute;
+    bottom: 14%;
+    left: -21%;
+}
+.respond .swiper-respond .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+    font-size: 20px;
+    background-color: #FF2E63;
+}
+
+/* Winners */
+
+.winners{
+    margin-bottom: 100px;
+}
+
+.winners .winners__title{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+
+    color: #343434;
+    margin-bottom: 31px;
+}
+
+.winners .wrap .swiper__container{
+    height: 200px;
+}
+
+.winners .wrap .swiper__slide__title{
+    margin-bottom: 4px;
 }
