@@ -81,6 +81,7 @@ ul, ol{
 .header .wrap .nav .nav__list .nav__item{
     margin-left: 30px;
     cursor: pointer;
+    transition: .3s;
 }
 .header .wrap .nav .nav__list .nav__item:hover{
     color:#FF2E63;
@@ -108,7 +109,7 @@ ul, ol{
 /* Hero */
 
 .hero{
-    margin-bottom: 100px;
+    margin-bottom: 96px;
 }
 .hero .wrap{
     display: flex;
@@ -166,4 +167,125 @@ ul, ol{
     width: 53%;
     padding-bottom: 53%;
     z-index: -1;
+}
+
+/* Swiper */
+
+.competitions{
+    margin-bottom: 100px;
+}
+
+.competitions .wrap .competitions__title{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+
+    color: #343434;
+    margin-bottom: 31px;
+}
+
+.competitions .wrap .competitions__item{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.competitions .wrap .competitions__item .swiper__container img{
+    transition: all .3s ease;
+    height: 100%;
+}
+
+.competitions .wrap .competitions__item .swiper__container:hover img{
+    transform: scale(1.1);
+}
+
+.competitions .wrap .swiper__container{
+    display: block;
+    min-height: 160px;
+    height: 160px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text{
+    padding: 21px 0 11px 20px;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__title{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #252A34;
+    cursor: pointer;
+    transition: .3s;
+    display: inline-block;
+}
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__title:hover{
+    transform: scale(1.2) translateX(20px);
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices{
+    display: flex;
+    align-items: flex-start;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices .swiper__slide__newprice{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+
+    color: #FF2E63;
+    margin: 0 7px 9px 0;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__prices .swiper__slide__oldprice{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: line-through;
+
+    color: #999999;
+    padding-top: 9px;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #343434;
+}
+
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    color: #fff;
+    background: #346CD9;
+    border-radius: 10px 0px;
+    
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.competitions .wrap .competitions__item .swiper__slide__text .swiper__slide__button:hover{
+    background:#244b97;
 }
