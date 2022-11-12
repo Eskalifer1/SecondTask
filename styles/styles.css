@@ -74,6 +74,12 @@ ul, ol{
     color: #FF2E63;
 }
 
+.header .wrap .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header .wrap .nav .nav__list{
     display: flex;
     font-family: 'Open Sans';
@@ -82,6 +88,7 @@ ul, ol{
     font-size: 14px;
     line-height: 19px;
     color: #252A34;
+    margin-right: 78px;
 }
 .header .wrap .nav .nav__list .nav__item{
     margin-left: 30px;
@@ -97,6 +104,7 @@ ul, ol{
     color: #FF2E63;
     padding: 8px 26px 10px 23px;
 }
+
 .header .wrap .header__buttons .login:hover{
     background: #FF2E63;
     color: #fff;
@@ -115,6 +123,7 @@ ul, ol{
 
 .hero{
     margin-bottom: 96px;
+    padding: 0 20px;
 }
 .hero .wrap{
     display: flex;
@@ -123,6 +132,7 @@ ul, ol{
 .hero__top{
     padding-top: 20px;
     max-width: 430px;
+    margin-right: 40px;
 }
 
 .hero__top h1{
@@ -174,6 +184,7 @@ ul, ol{
 
 .competitions{
     margin-bottom: 101px;
+    padding: 0 20px;
 }
 
 .competitions .wrap .competitions__title{
@@ -296,6 +307,7 @@ ul, ol{
 
 .works{
     margin-bottom: 100px;
+    padding: 0 20px;
 }
 
 .works .wrap{
@@ -356,19 +368,21 @@ ul, ol{
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide{
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     text-align: center;    
 }
-.respond .swiper-respond .swiper-wrapper:first-child{
+/* .respond .swiper-respond .swiper-wrapper:first-child{
     margin-left: 9.3%;
-}
+} */
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 40%;
+    padding-top: 78px;
+    margin-right: 22px;
+    
+    text-align: center;
 }
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top .respond__top__title{
     font-family: 'Open Sans';
@@ -379,7 +393,7 @@ ul, ol{
     max-width: 400px;
 
     color: #343434;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top .respond__top__name{
@@ -388,12 +402,10 @@ ul, ol{
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    /* or 188% */
-
-    text-align: center;
     text-transform: uppercase;
-
+    align-self: start;
     color: #343434;
+    margin-left: 120px;
 }
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__container{
@@ -408,7 +420,7 @@ ul, ol{
 .respond .swiper-respond .swiper-pagination{
     position: absolute;
     bottom: 14%;
-    left: -21%;
+    left: -20%;
 }
 .respond .swiper-respond .swiper-pagination-bullet{
     width: 13px;
@@ -420,7 +432,12 @@ ul, ol{
 /* Winners */
 
 .winners{
-    margin-bottom: 110px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+.winners .wrap .swiper-slide .swiper__slide__text {
+    padding-bottom: 18px;
 }
 
 .winners .winners__title{
@@ -477,11 +494,22 @@ ul, ol{
 
 /* MEdia */
 
-@media(max-width:1050px){
+@media(max-width:1025px){
     .wrap{
         max-width: none;
     }
     .header{
-        
+        padding: 0 30px;
+        position: relative;
+    }
+    .header .nav{
+        position: relative;
+        top: 0%;
+        right: -100%;
+    }
+    .header .header__buttons{
+        position: relative;
+        top: 0%;
+        right: -150%;
     }
 }
