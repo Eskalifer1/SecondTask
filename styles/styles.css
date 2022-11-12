@@ -17,6 +17,7 @@ html, body {
     margin: 0 auto;
 }
 .logo{
+    display: inline-block;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -26,6 +27,9 @@ html, body {
     color: #252A34;
     cursor: pointer;
     transition: .3s;
+}
+.logo__white{
+    color: #fff;
 }
 .logo:hover{
     transform: scale(1.2);
@@ -118,7 +122,7 @@ ul, ol{
 
 .hero__top{
     padding-top: 20px;
-    margin-right: 55px;
+    max-width: 430px;
 }
 
 .hero__top h1{
@@ -144,7 +148,6 @@ ul, ol{
 
 
 .hero__bottom .container{
-    min-height: 302px;
     margin-right: -55px;
     position: relative;
     z-index: 2;
@@ -152,10 +155,7 @@ ul, ol{
 
 
 .hero__bottom .container img{
-    min-width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width: 100%;
 }
 
 .hero__bottom .container::after{
@@ -193,6 +193,7 @@ ul, ol{
     max-width: 270px;
     position: relative;
     overflow: hidden;
+    background: #fff;
 }
 
 .wrap .swiper-slide .swiper__container img{
@@ -315,8 +316,8 @@ ul, ol{
 .works .wrap .works__instruction{
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: start;
+    gap: 12px;
 }
 
 .works .wrap .works__instruction .works__item{
@@ -419,7 +420,7 @@ ul, ol{
 /* Winners */
 
 .winners{
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 
 .winners .winners__title{
@@ -439,4 +440,45 @@ ul, ol{
 
 .winners .wrap .swiper__slide__title{
     margin-bottom: 4px;
+}
+
+.footer{
+    background-color: #346CD9;
+    padding: 16px;
+}
+
+.footer .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .wrap .nav__list{
+    display: flex;
+}
+
+.footer .wrap .nav__list .nav__item{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    margin-left: 30px;
+    color:#fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer .wrap .nav__list .nav__item:hover{
+    transform: scale(1.1);
+}
+
+/* MEdia */
+
+@media(max-width:1050px){
+    .wrap{
+        max-width: none;
+    }
 }
