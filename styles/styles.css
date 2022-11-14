@@ -812,10 +812,8 @@ ul, ol{
 }
 @media(max-width:500px){
     .header{
+        padding-top: 8px;
         margin-bottom: 75px;
-    }
-    .header .wrap .nav .logo__nav{
-        padding: 26px 30px;
     }
     .header .wrap .nav .nav__list{
         margin-bottom: 10px;
@@ -839,7 +837,7 @@ ul, ol{
     .header .wrap .header__burger{
         width: 24px;
         height: 24px;
-        top: 37%;
+        top: 17%;
         right: 3%;
     }
     .header .wrap .header__burger span{
@@ -849,6 +847,9 @@ ul, ol{
     .header .wrap .header__burger::before, .header .wrap .header__burger::after{
         width: 16px;
         height: 3px;
+    }
+    .header .wrap .header__burger.active::after{
+        bottom: 43%;
     }
     .header .wrap .nav .logo__nav{
         padding: 9px 18px;
