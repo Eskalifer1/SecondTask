@@ -392,6 +392,7 @@ ul, ol{
     background: #346CD91F;
     margin-bottom: 100px;
     position: relative;
+    min-height: 40vh;
 }
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide{
@@ -431,6 +432,7 @@ ul, ol{
     margin-right: 22px;
     align-items: flex-end;
     text-align: center;
+    min-height: 40%;
 }
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top .respond__top__title{
     font-family: 'Open Sans';
@@ -457,6 +459,7 @@ ul, ol{
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__container{
     flex-basis: 50%;
+    height: 100%;
 }
 
 .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__container img{
@@ -547,6 +550,9 @@ ul, ol{
     }
     .header .wrap .nav .nav__list .nav__item{
         margin-left: 15px;
+    }
+    .respond{
+        min-height: 30vh;
     }
 }
 
@@ -693,6 +699,9 @@ ul, ol{
     }
 
     /* Respond */
+    .respond{
+        min-height: 25vh;
+    }
     .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top{
         margin: 0;
         padding-top: 2%;
@@ -778,13 +787,15 @@ ul, ol{
         transform: rotate(90deg);
     }
 
+    .respond{
+        min-height: 0;
+    }
     .respond .swiper-respond .swiper-wrapper .swiper-slide{
         justify-content: center;
         align-items: center;
         padding-bottom: 40px;
         padding-top: 20px;
     }
-
 
     .respond .swiper-respond .swiper-wrapper .swiper-slide .respond__top{
         padding: 0;
