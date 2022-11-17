@@ -80,8 +80,8 @@ function orientationChecker(){
         document.querySelector("body").classList.add("resize");
     } else document.querySelector("body").classList.remove("resize");
 }
-window.addEventListener("load", orientationChecker)
-window.addEventListener('resize',orientationChecker);
+window.addEventListener("load", orientationChecker, {passive: true})
+window.addEventListener('resize',orientationChecker, {passive: true});
 let lazyImagePositions = [];
 if(lazyImages.length > 0){
     lazyImages.forEach(img => {
