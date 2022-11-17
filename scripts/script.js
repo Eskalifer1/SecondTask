@@ -10,19 +10,7 @@ const swiperCompetitions = new Swiper('.swiper',{
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 1,
-
-    loop: true,
-
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter:true
-    },
-
-    observer: true,
-    observeParents: true,
-    observeSlideChildren: true,
-
+    loop: false,
     followFinger: true,
     breakpoints:{
         1025:{
