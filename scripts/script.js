@@ -19,14 +19,6 @@ const swiperCompetitions = new Swiper('.swiper',{
 
     slidesPerGroup: 1,
 
-    loop: true,
-
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter:true
-    },
-
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
@@ -100,13 +92,17 @@ const swiperRespond = new Swiper(".swiper-respond", {
 const lazyImages = document.querySelectorAll('img[data-src]');
 let windowHeight = document.documentElement.clientHeight;
 
+let burger = document.querySelector(".header__burger");
+let nav = document.querySelector(".nav");
+let body = document.querySelector("body");
+
 function orientationChecker(){
     windowHeight = document.documentElement.clientHeight;
     windowWidth = document.documentElement.clientWidth;
 
     if(windowWidth > (windowHeight - 60)){
-        document.querySelector("body").classList.add("resize");
-    } else document.querySelector("body").classList.remove("resize");
+        body.classList.add("resize");
+    } else body.classList.remove("resize");
 }
 
 // Resize
@@ -139,31 +135,10 @@ function lazyScrollCheck(){
         if(lazyImages[imgIndex].dataset.src){
             lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
             lazyImages[imgIndex].removeAttribute('data-src');
-            setTimeout(()=>{
-                // updateDuplicateSlides();
-                update();
-            })
         }
         delete lazyImagePositions[imgIndex];
     }
 }
-
-// updateDuplicateSlides = function() {
-//     var swiper = this;
-//     var $wrapperEl = swiper.$wrapperEl;
-//     var params = swiper.params;
-//     var slides = swiper.slides;
-//     $wrapperEl.children(("." + (params.slideClass) + "." + (params.slideDuplicateClass)))
-//     .each(function() {
-//       var idx = this.getAttribute('data-swiper-slide-index');
-//       this.innerHTML = $wrapperEl.children('.'+params.slideClass+'[data-swiper-slide-index="'+idx+'"]:not(.'+params.slideDuplicateClass+')').html();
-//   })
-// }
-
-let burger = document.querySelector(".header__burger");
-let nav = document.querySelector(".nav");
-let body = document.querySelector("body");
-
 burger.addEventListener("click", function(){        
     nav.classList.toggle("active");
     burger.classList.toggle("active");
